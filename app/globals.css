@@ -1,0 +1,51 @@
+/* styles/globals.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300;1,400;1,700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #000;
+}
+
+/* styles/global.css */
+html {
+  scroll-behavior: smooth;
+}
+
+.swiper-button-prev::after {
+  width: 0 !important;
+  height: 0 !important;
+  border-top: 15px solid transparent !important;
+  border-bottom: 15px solid transparent !important;
+  border-right: 30px solid white !important;
+  color: transparent !important;
+}
+
+.swiper-button-next::after {
+  width: 0 !important;
+  height: 0 !important;
+  border-top: 15px solid transparent !important;
+  border-bottom: 15px solid transparent !important;
+  border-left: 30px solid white !important;
+  color: transparent !important;
+}
+
+@layer base {
+  .section-title {
+    @apply w-auto text-white font-anton text-center uppercase pb-2 text-4xl sm:text-5xl  border-b-4 border-[#EF3B28] inline-block mx-auto;
+  }
+
+  .testimonial-client-name {
+    @apply font-nunito text-black font-semibold;
+  }
+
+  .testimonial-client-designation {
+    @apply font-nunito text-sm text-[#858585];
+  }
+
+  .hash-span {
+    @apply block -mt-[30px] pb-[30px];
+  }
+}
