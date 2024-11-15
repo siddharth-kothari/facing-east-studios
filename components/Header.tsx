@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { navLinks } from "@/data";
-import { menu, close, logo } from "@/assets";
+import { close, hamburger_icon, fes_logo, line } from "@/assets";
 
 const Header = () => {
   const [active, setActive] = useState("");
@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <nav className={`${styles.paddingX} w-full flex items-center py-8`}>
-      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+      <div className="w-full flex justify-between items-center mx-auto">
         <Link
           href="/"
           className="flex items-center gap-2"
@@ -22,41 +22,41 @@ const Header = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img
+          <Image
             loading="lazy"
-            src={logo}
+            src={fes_logo}
             alt="facing east studios logo"
-            className="object-fill text-white"
+            className="max-w-[250px] sm:max-w-[300px]"
           />
         </Link>
-        <ul className="hidden lg:flex items-center border border-white rounded-2xl py-1 px-1">
+        <ul className="hidden 2xl:flex items-center border border-white rounded-2xl py-1 px-1">
           {navLinks.map((navLink, index) => (
             <React.Fragment key={navLink.id}>
               <li className="flex items-center ">
                 <Link
                   href={navLink.link}
-                  className="font-nunito font-bold text-lg text-white uppercase hover:bg-[#EF3B28] rounded-xl py-2 px-10"
+                  className="font-nunito font-bold text-md text-white uppercase hover:bg-[#EF3B28] rounded-xl py-2 px-10"
                 >
                   {navLink.title}
                 </Link>
               </li>
               {index < navLinks.length - 1 && (
-                <span className="mx-2 text-white">|</span>
+                <Image src={line} alt="line" className="mx-2" />
               )}
             </React.Fragment>
           ))}
         </ul>
-        <div className=" lg:hidden flex flex-1 justify-end items-center">
-          <img
+        <div className=" 2xl:hidden flex flex-1 justify-end items-center">
+          <Image
             loading="lazy"
-            src={toggle ? close : menu}
+            src={toggle ? close : hamburger_icon}
             alt="menu"
-            className="w-[28px] h-[28px] object-contain cursor-pointer"
+            className="w-[28px] h-[28px] z-20 cursor-pointer"
             onClick={() => setToggle(!toggle)}
           />
           <div
             className={`${
-              !toggle ? "hidden right-[-100%]" : " block right-0"
+              !toggle ? "top-[-110%]" : " block top-16"
             } duration-300 ease-out w-full h-screen bg-primary absolute top-16 z-50`}
           >
             <ul className="list-none h-screen bg-white flex justify-start mt-10 w-full items-center flex-col gap-4">

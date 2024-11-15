@@ -16,6 +16,10 @@ export default {
         nunito: ['"Nunito Sans"', "sans-serif"],
         anton: ['"Anton"', "sans-serif"],
       },
+      screens: {
+        "2xl": "1300px",
+        // => @media (min-width: 1280px) { ... }
+      },
     },
   },
   plugins: [],

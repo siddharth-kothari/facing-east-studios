@@ -1,4 +1,4 @@
-import { brewman, go } from "@/assets";
+import { brewman, fb_white, femm, go, insta_white, yt_white } from "@/assets";
 
 
 const navLinks = [
@@ -103,22 +103,22 @@ const works = [
         brand: "BrewMan",
     },
     {
-        image: go,
+        image: femm,
         text: "Ad Campaign for",
         brand: "Femm",
     },
     {
-        image: brewman,
+        image: go,
         text: "Label Design for",
         brand: "Go",
     },
     {
-        image: go,
+        image: brewman,
         text: "Brand Identity for",
         brand: "BrewMan",
     },
     {
-        image: brewman,
+        image: femm,
         text: "Ad Campaign for",
         brand: "Femm",
     },
@@ -135,10 +135,22 @@ const contact = {
     mail: "XYZ@gmail.com"
 };
 
-const socials = {
-    facebook: "",
-    youtube: "",
-    instagram: "",
-}
+const socials = [
+    {
+        title: "facebook",
+        image: fb_white,
+        link: "https://google.com/",
+    },
+    {
+        title: "youtube",
+        image: yt_white,
+        link: "https://google.com/",
+    },
+    {
+        title: "instagram",
+        image: insta_white,
+        link: "https://google.com/",
+    },
+]
 
 export { services, testimonials, navLinks, works, contact, socials };

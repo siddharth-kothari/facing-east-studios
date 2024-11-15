@@ -1,6 +1,6 @@
 "use client";
 
-import { robin } from "@/assets";
+import { fes, robin } from "@/assets";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -23,7 +23,9 @@ const About = () => {
       {!showDetail && (
         <div className="">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10 mb-20">
-            <div className="min-h-[300px] bg-white col-span-1"></div>
+            <div className="min-h-[300px] col-span-1 flex justify-center items-center">
+              <Image src={fes} alt="fes" />
+            </div>
             <div className="min-h-[300px] text-2xl col-span-1 md:col-span-2 pr-8 text-white font-medium">
               <p>
                 Facing East Studios is a creative force, driven by the belief
@@ -64,7 +66,7 @@ const About = () => {
               <Image
                 src={robin}
                 alt="photo of robin"
-                className="rounded-e-[97px] mt-12 h-52 object-cover object-top"
+                className="rounded-e-[97px] mt-12 h-52 object-cover object-center w-[95%]"
               />
             </div>
             <div className="min-h-[300px] text-2xl col-span-1 pr-8 text-white font-medium">

@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { works } from "@/data";
@@ -19,12 +19,16 @@ const Work = () => {
         <h1 className="section-title">Our Work</h1>
       </div>
       <Swiper
-        modules={[Navigation]}
+        modules={[Navigation, Autoplay]}
         navigation
         spaceBetween={1}
         slidesPerView={3}
         centeredSlides
         loop
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: true,
+        }}
         breakpoints={{
           // When screen width is >= 320px (mobile)
           320: {
@@ -40,7 +44,7 @@ const Work = () => {
           },
           // When screen width is >= 1024px (desktops)
           1024: {
-            slidesPerView: 3, // Show 3 slides
+            slidesPerView: 3.5, // Show 3 slides
           },
         }}
         className="rounded-carousel mb-16"

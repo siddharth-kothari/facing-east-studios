@@ -1,3 +1,5 @@
+import { blog } from "@/assets";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -16,10 +18,10 @@ const Blogs = () => {
             <div className="bg-white rounded-[30px] p-6 flex flex-col justify-between shadow-lg hover:shadow-2xl transition-shadow duration-300">
               <div>
                 <p className="text-sm">Creative | Tips</p>
-                <h3 className="text-lg font-semibold mt-2">
+                <h3 className="text-xl lg:text-4xl w-full lg:max-w-[70%] font-semibold mt-4 font-nunito lg:!leading-[3rem]">
                   Top 10 Trends in Graphic Design
                 </h3>
-                <p className="text-gray-600 text-sm font-thin mt-4">
+                <p className="text-gray-600 text-base w-full lg:max-w-[70%] font-thin mt-4">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna.
                 </p>
@@ -32,10 +34,10 @@ const Blogs = () => {
             <div className="bg-white rounded-[30px] p-6 flex flex-col justify-between shadow-lg hover:shadow-2xl transition-shadow duration-300">
               <div>
                 <p className="font-nunito text-sm">News | Brands</p>
-                <h3 className="text-lg font-semibold mt-2">
+                <h3 className="text-xl lg:text-4xl w-full lg:max-w-[70%] font-semibold mt-4 font-nunito lg:!leading-[3rem]">
                   Recent rebranding of your most favourite brand
                 </h3>
-                <p className="text-gray-600 text-sm font-thin mt-4">
+                <p className="text-gray-600  text-base w-full lg:max-w-[70%] font-thin mt-4">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna.
                 </p>
@@ -46,16 +48,15 @@ const Blogs = () => {
             </div>
           </div>
           <div className="bg-white rounded-[30px] h-full mb-8 md:mb-0">
+            <Image src={blog} alt="blog" />
             <div className="py-5 px-10 md:pb-10">
-              <p className="font-nunito font-thin">Creative | Tips</p>
-              <h3 className="font-nunito font-semibold text-xl my-5">
-                Top 10 Trends in Graphic Design
+              <p className="font-nunito font-thin">Business | Insights</p>
+              <h3 className="text-xl lg:text-4xl w-full font-semibold mt-4 font-nunito mb-3">
+                How brands are shaping consumer mindsets
               </h3>
-              <p className="font-extralight text-sm text-[#343434] mb-8">
+              <p className="font-extralight  text-base w-full lg:max-w-[70%] text-[#343434] mb-8">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna Lorem ipsum
-                dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna
+                eiusmod tempor incididunt ut labore et dolore magna
               </p>
               <Link
                 href="/"

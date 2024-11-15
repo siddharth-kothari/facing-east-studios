@@ -3,6 +3,7 @@
 import { styles } from "@/app/styles";
 import { contact, socials } from "@/data";
 import { EnvelopeIcon, MapPinIcon, PhoneIcon } from "@heroicons/react/16/solid";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -102,11 +103,18 @@ const Footer = () => {
           </div>
           <div className="flex items-center gap-2 mt-16">
             <h3 className="font-bold font-nunito">Follow us on:</h3>
-            <div>
-              <Link href={socials.facebook}></Link>
-              <Link href={socials.youtube}></Link>
-              <Link href={socials.instagram}></Link>
-            </div>
+            <span className="flex gap-3 items-center">
+              {socials.map((social, index) => (
+                <Link href={social.link} key={index} passHref>
+                  <Image
+                    src={social.image}
+                    alt={`Visit our ${social.title} profile`}
+                    width={20}
+                    height={20}
+                  />
+                </Link>
+              ))}
+            </span>
           </div>
         </div>
       </div>
