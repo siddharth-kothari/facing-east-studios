@@ -2,7 +2,7 @@
 
 import { styles } from "@/app/styles";
 import { contact, socials } from "@/data";
-import { EnvelopeIcon, MapPinIcon, PhoneIcon } from "@heroicons/react/16/solid";
+import { envelope, location, phone } from "@/assets";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -21,15 +21,27 @@ const Footer = () => {
             Connect.
           </h2>
           <div className="flex items-center space-x-2 text-base">
-            <MapPinIcon className="w-5 h-5 text-[#EF3B28]" />
+            <Image
+              src={location}
+              alt={contact.location}
+              className="w-5 h-5 text-[#EF3B28]"
+            />
             <span>{contact.location}</span>
           </div>
           <div className="flex items-center space-x-2 text-base">
-            <PhoneIcon className="w-5 h-5 text-[#EF3B28]" />
+            <Image
+              src={phone}
+              alt={contact.phone}
+              className="w-5 h-5 text-[#EF3B28]"
+            />
             <span>{contact.phone}</span>
           </div>
           <div className="flex items-center space-x-2 text-base">
-            <EnvelopeIcon className="w-5 h-5 text-[#EF3B28]" />
+            <Image
+              src={envelope}
+              alt={contact.mail}
+              className="w-5 h-5 text-[#EF3B28]"
+            />
             <span>{contact.mail}</span>
           </div>
         </div>

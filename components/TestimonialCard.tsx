@@ -1,5 +1,6 @@
-import { StarIcon } from "@heroicons/react/16/solid";
 import React from "react";
+import { star } from "@/assets";
+import Image from "next/image";
 
 interface Testimonial {
   image: string;
@@ -29,7 +30,12 @@ const TestimonialCard: React.FC<Testimonial> = ({
       </div>
       <div className="flex items-center">
         {Array.from({ length: rating }, (_, i) => (
-          <StarIcon key={i} className="h-5 w-5 text-yellow-500" />
+          <Image
+            src={star}
+            alt={`${rating} stars`}
+            key={i}
+            className="h-5 w-5 text-yellow-500"
+          />
         ))}
       </div>
       <p className="testimonial-client-designation mt-2">{testimonial}</p>

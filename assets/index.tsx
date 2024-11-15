@@ -15,8 +15,16 @@ import blog from "./blog.webp";
 import line from "./line.webp";
 import fes_logo from "./fes_logo.webp";
 import close from "./xmark.svg";
+import envelope from "./envelope.svg";
+import location from "./location.svg";
+import phone from "./phone.svg";
+import star from "./star.svg";
 
 export {
+  envelope,
+  location,
+  phone,
+  star,
   close,
   fes_logo,
   blog,
