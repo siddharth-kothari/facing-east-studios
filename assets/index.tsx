@@ -14,8 +14,10 @@ import hamburger_icon from "./hamburger.webp";
 import blog from "./blog.webp";
 import line from "./line.webp";
 import fes_logo from "./fes_logo.webp";
+import close from "./xmark.svg";
 
 export {
+  close,
   fes_logo,
   blog,
   line,

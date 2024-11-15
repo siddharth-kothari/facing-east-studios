@@ -18,7 +18,7 @@ const Blogs = () => {
             <div className="bg-white rounded-[30px] p-6 flex flex-col justify-between shadow-lg hover:shadow-2xl transition-shadow duration-300">
               <div>
                 <p className="text-sm">Creative | Tips</p>
-                <h3 className="text-xl lg:text-4xl w-full lg:max-w-[70%] font-semibold mt-4 font-nunito lg:!leading-[3rem]">
+                <h3 className="text-xl lg:text-3xl w-full lg:max-w-[70%] font-semibold mt-4 font-nunito lg:!leading-[2.5rem]">
                   Top 10 Trends in Graphic Design
                 </h3>
                 <p className="text-gray-600 text-base w-full lg:max-w-[70%] font-thin mt-4">
@@ -34,7 +34,7 @@ const Blogs = () => {
             <div className="bg-white rounded-[30px] p-6 flex flex-col justify-between shadow-lg hover:shadow-2xl transition-shadow duration-300">
               <div>
                 <p className="font-nunito text-sm">News | Brands</p>
-                <h3 className="text-xl lg:text-4xl w-full lg:max-w-[70%] font-semibold mt-4 font-nunito lg:!leading-[3rem]">
+                <h3 className="text-xl lg:text-3xl w-full lg:max-w-[70%] font-semibold mt-4 font-nunito lg:!leading-[2.5rem]">
                   Recent rebranding of your most favourite brand
                 </h3>
                 <p className="text-gray-600  text-base w-full lg:max-w-[70%] font-thin mt-4">
@@ -51,7 +51,7 @@ const Blogs = () => {
             <Image src={blog} alt="blog" />
             <div className="py-5 px-10 md:pb-10">
               <p className="font-nunito font-thin">Business | Insights</p>
-              <h3 className="text-xl lg:text-4xl w-full font-semibold mt-4 font-nunito mb-3">
+              <h3 className="text-xl lg:text-3xl w-full font-semibold mt-4 font-nunito mb-3">
                 How brands are shaping consumer mindsets
               </h3>
               <p className="font-extralight  text-base w-full lg:max-w-[70%] text-[#343434] mb-8">

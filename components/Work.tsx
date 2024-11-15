@@ -62,7 +62,7 @@ const Work = () => {
                 objectFit="cover"
                 className="transition-all duration-500 ease-in-out"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+              <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 text-center md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
                 <span className="font-nunito font-medium text-white text-4xl">
                   {work.text} <span className="!font-black">{work.brand}</span>
                 </span>

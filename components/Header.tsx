@@ -57,7 +57,7 @@ const Header = () => {
           <div
             className={`${
               !toggle ? "top-[-110%]" : " block top-0"
-            } duration-300 ease-out right-0 w-full h-screen bg-primary absolute z-30`}
+            } duration-300 ease-out right-0 w-full min-h-screen bg-primary absolute z-30`}
           >
             <ul className="list-none h-screen bg-black text-white pt-24 flex justify-start w-full flex-col gap-4">
               {navLinks.map((link) => (
