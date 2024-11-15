@@ -7,7 +7,7 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <section className={` mt-48 mb-10 `}>
+    <section className={`mt-48 mb-10 `}>
       <div className={`flex items-center text-white min-w-screen mb-5`}>
         <div className={`px-6 md:px-28 relative z-10`}>
           <h1 className="my-8 font-anton text-4xl sm:text-5xl md:text-6xl lg:text-7xl lg:max-w-[800px] ">

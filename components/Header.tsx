@@ -16,7 +16,7 @@ const Header = () => {
       <div className="w-full flex justify-between items-center mx-auto">
         <Link
           href="/"
-          className="flex items-center gap-2"
+          className="flex items-center gap-2 z-50"
           onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
@@ -51,27 +51,27 @@ const Header = () => {
             loading="lazy"
             src={toggle ? close : hamburger_icon}
             alt="menu"
-            className="w-[28px] h-[28px] z-20 cursor-pointer"
+            className="w-[28px] h-[28px] z-50 cursor-pointer"
             onClick={() => setToggle(!toggle)}
           />
           <div
             className={`${
-              !toggle ? "top-[-110%]" : " block top-16"
-            } duration-300 ease-out w-full h-screen bg-primary absolute top-16 z-50`}
+              !toggle ? "top-[-110%]" : " block top-0"
+            } duration-300 ease-out right-0 w-full h-screen bg-primary absolute z-30`}
           >
-            <ul className="list-none h-screen bg-white flex justify-start mt-10 w-full items-center flex-col gap-4">
+            <ul className="list-none h-screen bg-black text-white pt-24 flex justify-start w-full flex-col gap-4">
               {navLinks.map((link) => (
                 <li
                   key={link.id}
                   className={`${
                     active === link.title ? "text-white" : "text-secondary"
-                  } font-poppins text-[16px] font-medium cursor-pointer`}
+                  } font-nunito text-[16px] font-medium cursor-pointer hover:bg-[#EF3B28] rounded-xl py-2 px-10`}
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(link.title);
                   }}
                 >
-                  <a href={`#${link.id}`}>{link.title}</a>
+                  <Link href={`${link.link}`}>{link.title}</Link>
                 </li>
               ))}
             </ul>
