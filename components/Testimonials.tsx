@@ -1,7 +1,6 @@
 import { testimonials } from "@/data";
 import React from "react";
 import TestimonialCard from "./TestimonialCard";
-import { background2 } from "@/assets";
 
 const Testimonials = () => {
   return (
