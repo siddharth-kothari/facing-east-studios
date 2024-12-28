@@ -44,7 +44,7 @@ const Work = () => {
           },
           // When screen width is >= 1024px (desktops)
           1024: {
-            slidesPerView: 3.5, // Show 3 slides
+            slidesPerView: 3, // Show 3 slides
           },
         }}
         className="rounded-carousel mb-16"
